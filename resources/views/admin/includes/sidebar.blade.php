@@ -1,4 +1,4 @@
-<div class="main-menu menu-fixed menu-light menu-accordion    menu-shadow " data-scroll-to-active="true">
+<div class="main-menu menu-fixed menu-light menu-accordion menu-shadow " data-scroll-to-active="true">
     <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
@@ -6,11 +6,11 @@
                         class="menu-title" data-i18n="nav.add_on_drag_drop.main">الرئيسية </span></a>
             </li>
 
-            <li class="nav-item  open ">
+            <li class="nav-item open ">
                 <a href=""><i class="la la-home"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">لغات الموقع </span>
                     <span
-                        class="badge badge badge-info badge-pill float-right mr-2"></span>
+                        class="float-right mr-2 badge badge-info badge-pill"></span>
                 </a>
                 <ul class="menu-content">
                     <li class="active"><a class="menu-item" href="#"
@@ -26,7 +26,7 @@
             <li class="nav-item"><a href=""><i class="la la-group"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">الاقسام الرئيسيه </span>
                     <span
-                        class="badge badge badge-danger badge-pill float-right mr-2"></span>
+                        class="float-right mr-2 badge badge-danger badge-pill"></span>
                 </a>
                 <ul class="menu-content">
                     <li class="active"><a class="menu-item" href="#"
@@ -41,7 +41,7 @@
             <li class="nav-item"><a href=""><i class="la la-group"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">الاقسام الفرعية   </span>
                     <span
-                        class="badge badge badge-danger badge-pill float-right mr-2">400</span>
+                        class="float-right mr-2 badge badge-danger badge-pill">400</span>
                 </a>
                 <ul class="menu-content">
                     <li class="active"><a class="menu-item" href="#"
@@ -56,7 +56,7 @@
             <li class="nav-item"><a href=""><i class="la la-male"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">المتاجر  </span>
                     <span
-                        class="badge badge badge-success badge-pill float-right mr-2"></span>
+                        class="float-right mr-2 badge badge-success badge-pill"></span>
                 </a>
                 <ul class="menu-content">
                     <li class="active"><a class="menu-item" href="#"
@@ -72,7 +72,7 @@
             <li class="nav-item"><a href=""><i class="la la-male"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">الطلاب  </span>
                     <span
-                        class="badge badge badge-warning  badge-pill float-right mr-2"></span>
+                        class="float-right mr-2 badge badge-warning badge-pill"></span>
                 </a>
                 <ul class="menu-content">
                     <li class="active"><a class="menu-item" href=""
@@ -89,7 +89,7 @@
                 <a href=""><i class="la la-male"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">تذاكر المراسلات   </span>
                     <span
-                        class="badge badge badge-danger  badge-pill float-right mr-2">0</span>
+                        class="float-right mr-2 badge badge-danger badge-pill">0</span>
                 </a>
                 <ul class="menu-content">
                     <li class="active"><a class="menu-item" href=""
@@ -99,37 +99,24 @@
             </li>
 
 
-            <li class=" nav-item"><a href="#"><i class="la la-television"></i><span class="menu-title"
-                                                                                    data-i18n="nav.templates.main">Templates</span></a>
+            <li class=" nav-item"><a href="#"><i class="la la-cog"></i><span class="menu-title"
+                                                                                    data-i18n="nav.templates.main">الإعدادات</span></a>
                 <ul class="menu-content">
-                    <li><a class="menu-item" href="#" data-i18n="nav.templates.vert.main">Vertical</a>
+                    <li><a class="menu-item" href="#" data-i18n="nav.templates.vert.main">وسائل التوصيل</a>
                         <ul class="menu-content">
-                            <li><a class="menu-item" href="../vertical-menu-template"
-                                   data-i18n="nav.templates.vert.classic_menu">Classic Menu</a>
-                            </li>
-                            <li><a class="menu-item" href="../vertical-modern-menu-template">Modern Menu</a>
+                          
+                            <li><a class="menu-item" href="{{ route('admin.index') }}">توصيل مجانى</a>
                             </li>
                             <li><a class="menu-item" href="../vertical-compact-menu-template"
-                                   data-i18n="nav.templates.vert.compact_menu">Compact Menu</a>
+                                   data-i18n="nav.templates.vert.compact_menu">توصيل داخلى</a>
                             </li>
                             <li><a class="menu-item" href="../vertical-content-menu-template"
-                                   data-i18n="nav.templates.vert.content_menu">Content Menu</a>
+                                   data-i18n="nav.templates.vert.content_menu">توصيل خارجة</a>
                             </li>
-                            <li><a class="menu-item" href="../vertical-overlay-menu-template"
-                                   data-i18n="nav.templates.vert.overlay_menu">Overlay Menu</a>
-                            </li>
+                          
                         </ul>
                     </li>
-                    <li><a class="menu-item" href="#" data-i18n="nav.templates.horz.main">Horizontal</a>
-                        <ul class="menu-content">
-                            <li><a class="menu-item" href="../horizontal-menu-template"
-                                   data-i18n="nav.templates.horz.classic">Classic</a>
-                            </li>
-                            <li><a class="menu-item" href="../horizontal-menu-template-nav"
-                                   data-i18n="nav.templates.horz.top_icon">Full Width</a>
-                            </li>
-                        </ul>
-                    </li>
+               
                 </ul>
             </li>
             <li class=" navigation-header">
@@ -140,7 +127,7 @@
             </li>
             <li class=" nav-item"><a href="#"><i class="la la-columns"></i><span class="menu-title"
                                                                                  data-i18n="nav.page_layouts.main">Page layouts</span><span
-                        class="badge badge badge-pill badge-danger float-right mr-2">New</span></a>
+                        class="float-right mr-2 badge badge-pill badge-danger">New</span></a>
                 <ul class="menu-content">
                     <li><a class="menu-item" href="layout-1-column.html" data-i18n="nav.page_layouts.1_column">1
                             column</a>
@@ -534,7 +521,7 @@
             </li>
             <li class=" nav-item"><a href="changelog.html"><i class="la la-copy"></i><span class="menu-title"
                                                                                            data-i18n="nav.changelog.main">Changelog</span><span
-                        class="badge badge badge-pill badge-warning float-right">1.0</span></a>
+                        class="float-right badge badge-pill badge-warning">1.0</span></a>
             </li>
             <li class="disabled nav-item"><a href="#"><i class="la la-eye-slash"></i><span class="menu-title"
                                                                                            data-i18n="nav.disabled_menu.main">Disabled Menu</span></a>
@@ -596,7 +583,7 @@
             </li>
             <li class=" nav-item"><a href="scrumboard.html"><i class="la la-check-square"></i><span class="menu-title"
                                                                                                     data-i18n="nav.scrumboard.main">Scrumboard</span><span
-                        class="badge badge badge-info float-right">Update</span></a>
+                        class="float-right badge badge-info">Update</span></a>
             </li>
             <li class=" nav-item"><a href="#"><i class="la la-clipboard"></i><span class="menu-title"
                                                                                    data-i18n="nav.invoice.main">Invoice</span></a>
@@ -779,7 +766,7 @@
             </li>
             <li class=" nav-item"><a href="#"><i class="la la-tablet"></i><span class="menu-title"
                                                                                 data-i18n="nav.cards.main">Cards</span><span
-                        class="badge badge badge-success float-right mr-2">New</span></a>
+                        class="float-right mr-2 badge badge-success">New</span></a>
                 <ul class="menu-content">
                     <li><a class="menu-item" href="card-bootstrap.html"
                            data-i18n="nav.cards.card_bootstrap">Bootstrap</a>
