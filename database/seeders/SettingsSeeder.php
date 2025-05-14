@@ -48,23 +48,23 @@ class SettingsSeeder extends Seeder
         // إدخال الإعدادات الأساسية
         foreach ($settings as $key => $value) {
             Setting::updateOrCreate(
-                ['key' => $key],
-               
+                ['key' => $key], // فحص إذا كان هناك إعداد بنفس المفتاح
+                ['value' => $value, 'updated_at' => now()] // تحديث أو إنشاء السجل
             );
         }
 
+        // إدخال الترجمات
         foreach ($translations as $key => $locales) {
             // كل ترجمة تعتبر إعداد جديد بـ key مختلف (مثل الإعدادات العادية)
-            $setting = Setting::firstOrCreate(['key' => $key]);
-        
+            $setting = Setting::updateOrCreate(['key' => $key]);
+
             // لكل لغة، احفظ الترجمة
             foreach ($locales as $locale => $translatedValue) {
                 // استخدم العمود الصحيح 'setting_id' بدلاً من 'key'
                 $translation = $setting->translateOrNew($locale);
                 $translation->plan_value = $translatedValue; // تعيين القيمة المترجمة في العمود الصحيح
+                $translation->save(); // حفظ الترجمة
             }
-        
-            $setting->save();
         }
     }
 }

@@ -1,5 +1,6 @@
 <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow " data-scroll-to-active="true">
     <div class="main-menu-content">
+      
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
             <li class="nav-item active"><a href=""><i class="la la-mouse-pointer"></i><span
@@ -100,18 +101,18 @@
 
 
             <li class=" nav-item"><a href="#"><i class="la la-cog"></i><span class="menu-title"
-                                                                                    data-i18n="nav.templates.main">الإعدادات</span></a>
+                                                                                    data-i18n="nav.templates.main">{{strtoupper(__('keywords.settings'))}}</span></a>
                 <ul class="menu-content">
-                    <li><a class="menu-item" href="#" data-i18n="nav.templates.vert.main">وسائل التوصيل</a>
+                    <li><a class="menu-item" href="" data-i18n="nav.templates.vert.main"> {{strtoupper(__('keywords.shipping_methods'))}}</a>
                         <ul class="menu-content">
                           
-                            <li><a class="menu-item" href="{{ route('admin.index') }}">توصيل مجانى</a>
+                            <li><a class="menu-item" href="{{ route('admin.settings.shipping','free') }}" >{{strtoupper(__('keywords.free_shipping'))}} </a>
                             </li>
-                            <li><a class="menu-item" href="../vertical-compact-menu-template"
-                                   data-i18n="nav.templates.vert.compact_menu">توصيل داخلى</a>
+                            <li><a class="menu-item" href="{{ route('admin.settings.shipping','local') }}"
+                                   data-i18n="nav.templates.vert.compact_menu"> {{strtoupper(__('keywords.local_shipping'))}}</a>
                             </li>
-                            <li><a class="menu-item" href="../vertical-content-menu-template"
-                                   data-i18n="nav.templates.vert.content_menu">توصيل خارجة</a>
+                            <li><a class="menu-item" href="{{ route('admin.settings.shipping','outer') }}"
+                                   data-i18n="nav.templates.vert.content_menu"> {{strtoupper(__('keywords.outer_shipping'))}}</a>
                             </li>
                           
                         </ul>
@@ -253,7 +254,9 @@
                                    data-i18n="nav.vertical_nav.vertical_navigation_types.vertical_menu">Vertical
                                     Menu</a>
                             </li>
-                            <li><a class="menu-item" href="../vertical-modern-menu-template"
+                            <li>
+                                  
+                                   <a class="menu-item" href="{{ route('admin.index') }}"
                                    data-i18n="nav.vertical_nav.vertical_navigation_types.vertical_modern-menu">Vertical
                                     Modern Menu</a>
                             </li>
