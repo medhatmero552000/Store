@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('settings', function (Blueprint $table) {
+        Schema::create('{{ table }}', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('key')->unique();
-            $table->boolean('is_translatable')->default(false);
-            $table->string('value')->nullable();
-            $table->boolean('is_active')->default(1);
+            $table->string('');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -26,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('settings');
+        Schema::dropIfExists('{{ table }}');
     }
 };

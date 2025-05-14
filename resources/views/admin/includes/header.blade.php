@@ -4,8 +4,9 @@
         <div class="navbar-header">
             <ul class="flex-row nav navbar-nav">
                 <li class="mr-auto nav-item mobile-menu d-md-none"><a
-                        class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
-                            class="ft-menu font-large-1"></i></a></li>
+                    class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
+                    class="ft-menu font-large-1"></i></a></li>
+               
                 <li class="nav-item">
                     <a class="navbar-brand" href="index.html">
                         <img class="brand-logo" alt="modern admin logo"
@@ -16,6 +17,9 @@
                 <li class="nav-item d-md-none">
                     <a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i
                             class="la la-ellipsis-v"></i></a>
+                </li>
+                <li>
+                   
                 </li>
             </ul>
         </div>
@@ -30,6 +34,7 @@
                 <ul class="float-right nav navbar-nav">
                     <li class="dropdown dropdown-user nav-item">
                         <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                         
                 <span class="mr-1">مرجبا
                   <span
                       class="user-name text-bold-700">  Ahmed Emam</span>
@@ -54,9 +59,11 @@
                     </li>
 h
                     <li class="dropdown dropdown-notification nav-item">
+                       
                         <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-bell"></i>
                             <span class="badge badge-pill badge-default badge-danger badge-up badge-glow">5</span>
                         </a>
+                       
                         <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
                             <li class="dropdown-menu-header">
                                 <h6 class="m-0 dropdown-header">
@@ -64,6 +71,7 @@ h
                                 </h6>
                                 <span
                                     class="float-right m-0 notification-tag badge badge-default badge-danger">5 New</span>
+                                  
                             </li>
                             <li class="scrollable-container media-list w-100">
                                 <a href="javascript:void(0)">
@@ -238,6 +246,7 @@ h
                             <li class="dropdown-menu-footer"><a class="text-center dropdown-item text-muted"
                                                                 href="javascript:void(0)">Read all messages</a></li>
                         </ul>
+                      
                     </li>
                 </ul>
             </div>
